@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing Text</title>
+</head>
+<style>
+    body{
+        display: flex;
+        background-color:black;
+        width: 100%;
+        height: 100vh;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: 8px 2px 11px whitesmoke;
+    }
+
+    .main > span{
+        animation: glowtext 2s linear infinite;
+    }
+
+    @keyframes glowtext{
+        0%, 100%
+        {
+            color: white;
+            text-shadow: 0 0 12px orangered, 0 0 100px orangered;             
+        }
+        10%,90%{
+            color: #111;
+            text-shadow: none;
+        }
+    }
+
+    .main > span:nth-child(1)
+    {
+        animation-delay: 0.25s;
+    }
+    .main  > span:nth-child(2)
+    {
+        animation-delay: 0.5s;
+    }
+    .main  > span:nth-child(3)
+    {
+        animation-delay: 0.75s;
+    }
+    .main  > span:nth-child(4)
+    {
+        animation-delay: 1s;
+    }
+    .main > span:nth-child(5)
+    {
+        animation-delay: 1.5s;
+    }
+    .main  > span:nth-child(6)
+    {
+        animation-delay: 1.75s;
+    }
+    .main  > span:nth-child(7)
+    {
+        animation-delay: 2s;
+    }
+
+
+</style>
+<body>
+    <div class="main">
+        <span>S</span>
+        <span>H</span>
+        <span>W</span>
+        <span>E</span>
+        <span>T</span>
+        <span>A</span>
+        <span>!</span>
+    </div>
+</body>
+</html>
