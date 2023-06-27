@@ -1,1 +1,1 @@
-# Growing-Text
+# Glowing-Text
