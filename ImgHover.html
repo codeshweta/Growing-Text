@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./animal.jpg"  type="image/x-icon">
+    <title>Gallery Hover</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    .h1{
+        position: relative;
+        left: 50px;
+        padding: .75rem;
+        color: white;
+        align-items: center;
+        font-size: 60px;
+        justify-content: center;
+    }
+    .container{
+        position:absolute;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery{
+        display: flex;
+        gap: 5px;
+        width: 700px;
+        height: 400px;
+        
+    }
+
+    .gallery img{
+        height: 100%;
+        flex: 1;
+        object-fit: cover;
+        overflow: hidden;
+        cursor: pointer;
+        border: 1px solid white;
+        box-shadow: 0 0 0.75rem 0 white;
+        border-radius: 10px;
+        transition: all 0.3s;        
+    }
+
+    .gallery img:hover{
+        flex:4;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <p class="h1">Gallery Image</p>
+    <div class="gallery" >
+        <img src="./animal.jpg" alt="animal">
+        <img src="./v.png" alt="V">
+        <img src="./Virat Kohli.jpg" alt="Virat Kohli">
+        <img src="./jk.jpg" alt="Jungkook">
+        <img src="./pikachu.png" alt="Pikachu">
+    </div>
+    </div>
+</body>
+</html>
